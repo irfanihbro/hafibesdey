@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="background"></canvas>
+    <div class="container">
+        <h1 style="position: relative; top: -50px; text-align: center; background-color: rgba(0, 0, 0, 0.3); color: pink; font-family: 'Pacifico', cursive; border-radius: 5px;">Selamat ulang tahun!</h1>
+        <div class="cake">
+            <div class="layer top"></div>
+            <div class="layer middle"></div>
+            <div class="layer bottom"></div>
+            <div class="candles">
+                <div class="candle" onclick="toggleFlame('flame1')">
+                    <div class="flame" id="flame1"></div>
+                </div>
+                <div class="candle" onclick="toggleFlame('flame2')">
+                    <div class="flame" id="flame2"></div>
+                </div>
+                <div class="candle" onclick="toggleFlame('flame3')">
+                    <div class="flame" id="flame3"></div>
+                </div>
+            </div>
+        </div>
+        <p style="font-weight: bold; margin-top: -85px; background-color: rgba(0, 0, 0, 0.3); color: pink; font-family: 'Pacifico', cursive; border-radius: 5px;">Klik lilinnya untuk meniup apinya!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
